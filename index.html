@@ -42,10 +42,7 @@ a:hover{
 </h1>
 </header>
 <pre>
-<h1>
-Linux ip-172-31-26-142 4.6.0-1-amd64 #1 SMP Debian 4.6.4-1 (2016-07-18) x86_64 GNU/Linux<br />
-</h1>
-<br />
+Linux ip-172-31-26-142 4.6.0-1-amd64 #1 SMP Debian 4.6.4-1 (2016-07-18) x86_64 GNU/Linux
 $ df
 Filesystem     1K-blocks    Used Available Use% Mounted on
 udev              499396       0    499396   0% /dev
@@ -54,8 +51,15 @@ tmpfs             101892   10560     91332  11% /run
 tmpfs             509444       0    509444   0% /dev/shm
 tmpfs               5120       0      5120   0% /run/lock
 tmpfs             509444       0    509444   0% /sys/fs/cgroup
+$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev              499396       0    499396   0% /dev
+tmpfs             101892   10568     91324  11% /run
+/dev/xvda2       8124836 1860924   5828152  25% /
+tmpfs             509444       8    509436   1% /dev/shm
+tmpfs               5120       0      5120   0% /run/lock
+tmpfs             509444       0    509444   0% /sys/fs/cgroup
 </pre>
-<hr />
 <hr />
 first attempt:
 <pre>
