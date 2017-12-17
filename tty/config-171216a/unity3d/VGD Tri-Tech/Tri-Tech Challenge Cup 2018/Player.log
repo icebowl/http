@@ -1,0 +1,51 @@
+Initialize engine version: 2017.2.1f1 (94bf3f9e6b5e)
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+AudioManager: Using Unknown: NoSound Driver
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.037 seconds
+WARNING: Shader Unsupported: 'Hidden/VR/BlitTexArraySlice' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/VR/BlitTexArraySlice' - Setting to default shader.
+UnloadTime: 0.867000 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 7f85bb7fe700 -> priority: 1 
+Server has been started on port 6321
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Adding to teams list
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Adding to teams list
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Write error : The object was used after being disposed. to client asdasdasdas
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Adding to teams list
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Write error : The object was used after being disposed. to client asdasdasdas
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Write error : The object was used after being disposed. to client asdasdasdas
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Write error : The object was used after being disposed. to client asdasdasdas
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Write error : The object was used after being disposed. to client asdasdasdas
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

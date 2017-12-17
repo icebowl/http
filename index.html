@@ -1,0 +1,226 @@
+<html><head><title>icebowl.cc</title></head>
+<style>
+body{
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+}
+
+
+pre{
+background-color: #fdf6e3   ;
+color: #b58900;
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+border: solid 1px;
+border-radius: 20px;
+padding : 10px;
+
+}
+
+</style>
+<body>
+<header>
+<h1>
+<a href = "documentation/">documentation</a>&nbsp;
+<a href = "tty/">tty</a>
+</h1>
+</header>
+<pre>
+<h1>
+Linux ip-172-31-26-142 4.6.0-1-amd64 #1 SMP Debian 4.6.4-1 (2016-07-18) x86_64 GNU/Linux<br />
+</h1>
+<br />
+$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev              499396       0    499396   0% /dev
+tmpfs             101892   10560     91332  11% /run
+/dev/xvda2       8124836 1155020   6534056  16% /
+tmpfs             509444       0    509444   0% /dev/shm
+tmpfs               5120       0      5120   0% /run/lock
+tmpfs             509444       0    509444   0% /sys/fs/cgroup
+</pre>
+<hr />
+<hr />
+first attempt:
+<pre>
+/ttgamedesign/unity$ ./LinuxTestBuildv1_0.x86_64 
+Set current directory to /home/admin/ttgamedesign/unity
+Found path: /home/admin/ttgamedesign/unity/LinuxTestBuildv1_0.x86_64
+Mono path[0] = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/Managed'
+Mono config path = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/Mono/etc'
+Unable to preload the following plugins:
+	ScreenSelector.so
+Player data archive not found at `/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/data.unity3d`, using local filesystem
+Logging to /home/admin/.config/unity3d/VGD Tri-Tech/Tri-Tech Challenge Cup 2018/Player.log
+Stacktrace:
+
+
+Native stacktrace:
+
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/Mono/x86_64/libmono.so(+0x92456) [0x7fa4ada6b456]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x110bf) [0x7fa4b10470bf]
+	/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcf) [0x7fa4b0224fcf]
+	/lib/x86_64-linux-gnu/libc.so.6(abort+0x169) [0x7fa4b02263f9]
+	./LinuxTestBuildv1_0.x86_64() [0xa3428b]
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/Mono/x86_64/libmono.so(+0xd158a) [0x7fa4adaaa58a]
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_0_Data/Mono/x86_64/libmono.so(+0x3510d) [0x7fa4ada0e10d]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x110bf) [0x7fa4b10470bf]
+	./LinuxTestBuildv1_0.x86_64(SDL_GL_GetAttribute_REAL+0x1e3) [0x14aacb3]
+	./LinuxTestBuildv1_0.x86_64() [0x1342bee]
+	./LinuxTestBuildv1_0.x86_64() [0x13413ab]
+	./LinuxTestBuildv1_0.x86_64() [0x1341477]
+	./LinuxTestBuildv1_0.x86_64() [0x131317b]
+	./LinuxTestBuildv1_0.x86_64() [0x45aa19]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fa4b02122b0]
+	./LinuxTestBuildv1_0.x86_64() [0x4668b8]
+
+Debug info from gdb:
+
+
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+Aborted
+
+
+
+</pre>
+
+<hr />
+<hr />
+error 2:
+
+<pre>
+
+~/ttgamedesign/unity$ ./LinuxTestBuildv1_1.x86_64 
+Set current directory to /home/admin/ttgamedesign/unity
+Found path: /home/admin/ttgamedesign/unity/LinuxTestBuildv1_1.x86_64
+Mono path[0] = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Managed'
+Mono config path = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Mono/etc'
+Unable to preload the following plugins:
+	ScreenSelector.so
+Player data archive not found at `/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/data.unity3d`, using local filesystem
+Logging to /home/admin/.config/unity3d/VGD Tri-Tech/Tri-Tech Challenge Cup 2018/Player.log
+Stacktrace:
+
+
+Native stacktrace:
+
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Mono/x86_64/libmono.so(+0x92456) [0x7fd19f638456]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x110bf) [0x7fd1a2c140bf]
+	/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcf) [0x7fd1a1df1fcf]
+	/lib/x86_64-linux-gnu/libc.so.6(abort+0x169) [0x7fd1a1df33f9]
+	./LinuxTestBuildv1_1.x86_64() [0xa3428b]
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Mono/x86_64/libmono.so(+0xd158a) [0x7fd19f67758a]
+	/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Mono/x86_64/libmono.so(+0x3510d) [0x7fd19f5db10d]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x110bf) [0x7fd1a2c140bf]
+	./LinuxTestBuildv1_1.x86_64(SDL_GL_GetAttribute_REAL+0x1e3) [0x14aacb3]
+	./LinuxTestBuildv1_1.x86_64() [0x1342bee]
+	./LinuxTestBuildv1_1.x86_64() [0x13413ab]
+	./LinuxTestBuildv1_1.x86_64() [0x1341477]
+	./LinuxTestBuildv1_1.x86_64() [0x131317b]
+	./LinuxTestBuildv1_1.x86_64() [0x45aa19]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fd1a1ddf2b0]
+	./LinuxTestBuildv1_1.x86_64() [0x4668b8]
+
+Debug info from gdb:
+
+
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+Aborted
+
+
+
+</pre>
+<hr />
+LinuxTestBuildv1_1.x86_64 -nographics -batchmode
+<hr />
+<pre>
+ ./LinuxTestBuildv1_1.x86_64 -nographics -batchmode
+Set current directory to /home/admin/ttgamedesign/unity
+Found path: /home/admin/ttgamedesign/unity/LinuxTestBuildv1_1.x86_64
+Mono path[0] = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Managed'
+Mono config path = '/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/Mono/etc'
+Unable to preload the following plugins:
+	ScreenSelector.so
+Player data archive not found at `/home/admin/ttgamedesign/unity/LinuxTestBuildv1_1_Data/data.unity3d`, using local filesystem
+Logging to /home/admin/.config/unity3d/VGD Tri-Tech/Tri-Tech Challenge Cup 2018/Player.log
+
+
+
+
+</pre>
+<pre>
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+
+
+</pre>
+<footer>
+	<center>
+	<div style="background-color:#292a88;color:white;padding:5px;">
+		<div style="background-color:#425c9f;color:white;padding:5px;">
+			<div style="background-color:#6981c7;color:white;padding:5px;">
+				<div style="background-color:#8eb1e1;color:white;padding:5px;">
+					<div style="background-color:#c2dcff;color:#f00;padding:5px;">
+							<div style="background-color:#fff;color:#f00;padding:5px;">292a88 425c9f	6981c7	8eb1e1 c2dcff
+</div></div></div></div></div></div>	
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+</center>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
