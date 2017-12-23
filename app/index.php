@@ -54,7 +54,7 @@ if ($thepost == -1) {
 	echo "<pre>$output</pre>";
 }
 if ($thepost == 0) {
-	$output = shell_exec('/home/cwc/http/app/hellotime.o');
+	$output = shell_exec('/home/admin/http/app/hellotime.o');
 	 echo "OUTPUT";
 	echo "<pre>$output</pre>";
 }

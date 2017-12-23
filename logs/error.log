@@ -1,0 +1,2 @@
+[Sat Dec 23 05:58:30.834409 2017] [:error] [pid 23441] [client 68.118.220.49:54218] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE), expecting end of file in /home/admin/http/server/index.php on line 72, referer: http://icebowl.cc/server/index.php?v=0
+[Sat Dec 23 05:58:37.544642 2017] [:error] [pid 23439] [client 68.118.220.49:54220] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE), expecting end of file in /home/admin/http/server/index.php on line 72

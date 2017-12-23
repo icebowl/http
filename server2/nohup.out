@@ -1,0 +1,6 @@
+Set current directory to /home/admin/http/server
+Found path: /home/admin/http/server/LinuxTestBuildv1_3.x86_64
+Mono path[0] = '/home/admin/http/server/LinuxTestBuildv1_3_Data/Managed'
+Mono config path = '/home/admin/http/server/LinuxTestBuildv1_3_Data/Mono/etc'
+Player data archive not found at `/home/admin/http/server/LinuxTestBuildv1_3_Data/data.unity3d`, using local filesystem
+Logging to /home/admin/.config/unity3d/VGD Tri-Tech/Tri-Tech Challenge Cup 2018/Player.log
